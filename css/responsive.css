@@ -1,0 +1,271 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+
+/* Add a background color to the top navigation */
+.topnav {
+  background-color: #FFFFFF;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  	float: left;
+  	display: block;
+  	color: #000000;
+  	text-align: center;
+  	padding: 14px 16px;
+  	text-decoration: none;
+  	font-size: 20px;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  background-color: #4750FF;
+  color: white;
+  float: left;
+  display: none;
+}
+
+/* Add a background on topnav links */
+.topnav a:hover {
+  background-color: #4750FF;
+  color: white;
+}
+
+/* Dispositivo Smarthphone*/
+@media  screen and (max-width: 599px) {
+
+	/***********************************************************/
+
+	.topnav a:not(:first-child) {
+    	display: none;
+    	margin: 0;
+	}
+
+	.topnav a.icon {
+	    float: left;
+	    display: block;
+	    margin: 0;
+	}
+
+	.topnav.responsive a.icon {
+		float: left;
+	    background-color: blue;
+	    position: absolute;
+	    left: 0;
+	    top: 0;
+
+	}
+
+	.topnav.responsive a {
+	    float: none;
+	    display: block;
+	    text-align: center;
+
+	}
+
+	.topnav.responsive {
+	    float: none;
+	    position: relative;
+	    display: block;
+	    width: 100%;
+	    text-align: center;
+	}
+
+
+	#barra-navegacion{
+		border-bottom: 10px solid rgba(0,0,0,0.3);
+	}
+	
+	/***********************************************************/
+	
+	#imagen-cabecera {
+		background-image: url("../images/circuito.jpg");
+		margin:0;
+		background-repeat: repeat;
+		padding: 0;
+	}
+
+	#imagen-cabecera img{
+		padding: 25% 5%;
+	}
+
+	#contenido-principal {
+		background-color: #3323FF;
+		padding: 5%;
+		font-family: Times;
+	}
+
+	#contenido-principal h2{
+		text-decoration: underline;
+		color:white;
+		font-size: 25px;
+	}
+
+	#contenido-principal p{
+		text-align: justify;
+		color:white;
+		margin: 3%;
+		padding: 3%;
+		font-size: 15px;
+	}
+
+	#contenido-principal span{
+		float: right;
+		font-size: 17px;
+	}
+
+	#contenido-secundario {
+		background-color: white;
+		padding: 5%;
+		font-family: Times;
+	}
+
+	#contenido-secundario h3{
+		text-decoration: underline;
+		color:black;
+		font-size: 20px;
+	}
+
+	#contenido-secundario p{
+		text-align: justify;
+		color:black;
+		margin: 3%;
+		padding: 3%;
+		font-size: 15px;
+	}
+
+	#contenedor-pie{
+		background-image: url("../images/particulas.jpg");
+		background-size: cover;
+		margin: 0;
+		padding: 10%;
+		height: 15%;
+	}
+
+	#pie-pagina{
+		margin-left: 15%;
+		margin-right: 15%;
+		background-color: rgba(255,65,65,0.6);
+	}
+
+	#pie-pagina h2{
+		font-size: 25px;
+		padding: 15%;
+		color: white;
+		text-align: center;
+	}
+}
+
+/* PC Desktop*/
+@media (min-width: 600px){
+
+	#menu {
+		padding-left: 35%;
+	}
+
+	#menu a:first-child{
+		background-color: #3323FF;
+		text-decoration: underline;
+		color: white;
+	}
+
+	#barra-navegacion {
+		border-bottom: 10px solid rgba(0,0,0,0.3);
+	}
+
+	#imagen-cabecera, #contenido-principal{
+		display: inline;
+	}
+
+	#imagen-cabecera {
+		background-image: url("../images/circuito.jpg");
+		background-repeat: repeat;
+		width: 48%;
+		height: 630px;
+		float:left;
+	}
+
+	#imagen-cabecera img{
+		padding: 25%;
+		float:left;
+	}
+
+	#contenedor{
+		margin: 0 3%;
+	}
+
+	#contenido-principal {
+		background-color: #3323FF;
+		width: 42%;
+		height: 30%;
+		padding: 5%;
+		font-family: Times;
+		float: right;
+	}
+
+	#contenido-principal h2{
+		text-decoration: underline;
+		color:white;
+		font-size: 35px;
+	}
+
+	#contenido-principal p{
+		text-align: justify;
+		color:white;
+		margin: 3%;
+		padding: 3%;
+		font-size: 20px;
+	}
+
+	#contenido-principal span{
+		float: right;
+		font-size: 22px;
+	}
+
+	#contenido-secundario {
+		background-color: white;
+		padding-left: 20px;
+		padding-right: 20px;
+		font-family: Times;
+		float: left;
+	}
+
+	#contenido-secundario h3{
+		text-decoration: underline;
+		color:black;
+		font-size: 35px;
+	}
+
+	#contenido-secundario p{
+		column-count: 2;
+		text-align: justify;
+		color:black;
+		font-size: 20px;
+	}
+
+	#contenedor-pie{
+		background-image: url("../images/particulas.jpg");
+		background-size: cover;
+		margin: 70px 0 0 0;
+		padding: 10%;
+		width: 80%;
+		height: 10%;
+		float:left;
+	}
+
+	#pie-pagina{
+		margin-left: 15%;
+		margin-right: 15%;
+		background-color: rgba(255,65,65,0.6);
+	}
+
+	#pie-pagina h2{
+		font-size: 50px;
+		padding: 15%;
+		color: white;
+		text-align: center;
+	}
+}
